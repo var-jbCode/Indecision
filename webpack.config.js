@@ -3,7 +3,7 @@ const path = require('path')
 
 
 module.exports = {
-    entry: './src/app.js',
+    entry: '/src/app.js',
     output: {
         path: path.join(__dirname, 'public', 'dist'),
         filename: 'bundle.js'
@@ -28,6 +28,7 @@ module.exports = {
     devtool: "cheap-module-source-map",
     devServer: {
         contentBase: path.join(__dirname, 'public'),
+        historyApiFallback: true,
         open: true,
         publicPath: '/dist/'
     }
