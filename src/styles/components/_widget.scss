@@ -1,0 +1,29 @@
+.widget{
+    color: darken($one, 10%);
+    background: lighten($back, 7%);
+    margin-bottom: $xl-size;
+    border-radius: 10px;
+
+}
+
+.widget-header{
+    background: lighten($back, 5%);
+    color: $one;
+    padding: $s-size;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.widget-header__title {
+    margin: 0;
+}
+
+.widget--message {
+    text-align: center;
+    padding: $l-size;
+    font-weight: 400;
+    margin: 0;
+    border-bottom: 5px solid  lighten($back, 10%);
+    
+}

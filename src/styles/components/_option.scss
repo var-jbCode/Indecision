@@ -1,0 +1,13 @@
+.option{
+    display: flex;
+    justify-content: space-between;
+    padding: $m-size $l-size;
+    border-bottom: lighten($back, 10%);
+}
+
+.option__text{
+    margin: 0;
+    font-weight: 500;
+    font-size: 2rem;
+    word-break: break-all;
+}
