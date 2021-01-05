@@ -6,8 +6,10 @@
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
-    "build": "webpack --watch",
-    "dev-server": "webpack-dev-server"
+    "build": "webpack --config webpack.prod.js",
+    "dev-server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "yarn run build"
   },
   "dependencies": {
     "@babel/core": "^7.12.3",
@@ -20,6 +22,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^5.0.0",
+    "express": "^4.17.1",
     "html-webpack-plugin": "^4.5.0",
     "live-server": "^1.2.1",
     "node-sass": "^4.14.1",
@@ -31,7 +34,8 @@
     "style-loader": "^2.0.0",
     "validator": "^13.1.17",
     "webpack-dev-middleware": "^3.7.2",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.7.3"
   },
   "devDependencies": {
     "@webpack-cli/serve": "^1.0.1-alpha.5",
