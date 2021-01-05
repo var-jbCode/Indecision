@@ -1,5 +1,3 @@
 node_modules
-public/bundle.js
-public/bundle.js.license.txt
-public/bundle.js.map
+public/dist
 
